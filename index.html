@@ -14,6 +14,7 @@
     <div id="app" class="container">
         <div class="m-2 text-center">
             <h2>Lista di 10 mail casuali con API</h2>
+            <button type="button" class="btn btn-success my-3" @click="clickEmailRandom()">Genera mail</button>
             <ul class="list-group">
                 <!-- Ciclo per stampare la lista delle mail con controllo per stamparle tutte insieme (bonus) -->
                 <li class="list-group-item" v-if="emailListArray.length == 10" v-for="(item, index) in emailListArray" >
